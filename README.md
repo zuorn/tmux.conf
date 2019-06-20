@@ -2,9 +2,7 @@
 
 ## 截图:
 
-![tmux](https://blog-1256335675.cos.ap-chengdu.myqcloud.com/2019-06-20-044905.jpg)
-
-
+![](https://blog-1256335675.cos.ap-chengdu.myqcloud.com/2019-06-20-044057.png)
 
 
 ## 使用:
