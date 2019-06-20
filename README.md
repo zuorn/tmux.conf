@@ -8,7 +8,7 @@
 ## 使用:
 
 ```
-$ git clone git@github.com:zuorn/tmux-config.git
+$ git clone https://github.com/zuorn/tmux.con 
 $ cp tmux-config/.tmux.conf ~/.tmux.conf
 ```
 重启 tmux `restart tmux` 或者 在 tmux 窗口中，先按下 `Ctrl+b` 指令前缀，然后按下系统指令:，进入到命令模式后输入 `source-file ~/.tmux.conf`，回车后生效。
