@@ -8,7 +8,7 @@
 ## 使用:
 
 ```
-$ git clone https://github.com/zuorn/tmux.con 
+$ git clone https://github.com/zuorn/tmux.con
 $ cp tmux-config/.tmux.conf ~/.tmux.conf
 ```
 重启 tmux `restart tmux` 或者 在 tmux 窗口中，先按下 `Ctrl+b` 指令前缀，然后按下系统指令:，进入到命令模式后输入 `source-file ~/.tmux.conf`，回车后生效。
@@ -19,7 +19,7 @@ $ cp tmux-config/.tmux.conf ~/.tmux.conf
 
 ### 修改指令前缀
 
-可根据自己的喜好来设置，如若要启用，取消注释即可。
+可根据自己的喜好来设置，由于我把电脑的 Caps Lock 键和 Ctrl 键做了调换，所以感觉 Ctrl + f 按起来比较方便。
 ```sh
 #set -g prefix C-f #
 #unbind C-f # C-b 即 Ctrl+b 键，unbind 意味着解除绑定
@@ -108,7 +108,20 @@ set -g status-interval 1 # 状态栏刷新时间
 set -g status-justify left # 状态栏列表左对齐
 setw -g monitor-activity on # 非当前窗口有内容更新时在状态栏通知
 
+set -g status-fg yellow # 设置状态栏前景黄色
+set -g status-style "bg=black, fg=yellow" # 状态栏前景背景色
+
+set -g status-left "#[bg=#FF661D] 🐶 #S " # 状态栏左侧内容
+set -g status-right 'Continuum status: #{continuum_status}' # 状态栏右侧内容
+set -g status-left-length 300 # 状态栏左边长度300
+set -g status-right-length 500 # 状态栏左边长度500
+
 set -wg window-status-format " #I #W " # 状态栏窗口名称格式
 set -wg window-status-current-format " #I:#W#F " # 状态栏当前窗口名称格式(#I：序号，#w：窗口名称，#F：间隔符)
 set -wg window-status-separator "" # 状态栏窗口名称之间的间隔
+set -wg window-status-current-style "bg=red" # 状态栏当前窗口名称的样式
+set -wg window-status-last-style "fg=red" # 状态栏最后一个窗口名称的样式
+
+set -g message-style "bg=#202529, fg=#91A8BA" # 指定消息通知的前景、后景色
+
 ```
