@@ -2,8 +2,7 @@
 
 ## 截图:
 
-[](https://blog-1256335675.cos.ap-chengdu.myqcloud.com/2019-06-20-161234.png)
-
+![](https://blog-1256335675.cos.ap-chengdu.myqcloud.com/2019-06-20-161234.png)
 
 ## 使用:
 
