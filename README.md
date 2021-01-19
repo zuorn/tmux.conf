@@ -7,7 +7,7 @@
 ## 使用:
 
 ```
-$ git clone https://github.com/zuorn/tmux.con
+$ git clone https://github.com/zuorn/tmux.conf
 $ cp tmux-config/.tmux.conf ~/.tmux.conf
 ```
 重启 tmux `restart tmux` 或者 在 tmux 窗口中，先按下 `Ctrl+b` 指令前缀，然后按下系统指令:，进入到命令模式后输入 `source-file ~/.tmux.conf`，回车后生效。
@@ -74,6 +74,8 @@ bind -r ^l resizep -R 10 # 绑定Ctrl+l为往→调整面板边缘10个单元格
 
 ### 复制模式
 #### 复制模式更改为 vi 风格
+
+注意： 进入复制模式 快捷键：prefix + [
 
 ```sh
 setw -g mode-keys vi # 开启vi风格后，支持vi的C-d、C-u、hjkl等快捷键
